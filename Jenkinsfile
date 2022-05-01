@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'chmod 744 ${WORKSPACE}@script/jenkins/scripts/build.sh'
-                sh '${WORKSPACE}@script/jenkins/scripts/build.sh'
+                sh 'chmod 744 ./jenkins/scripts/build.sh'
+                sh './jenkins/scripts/build.sh'
             }
         }
     }
